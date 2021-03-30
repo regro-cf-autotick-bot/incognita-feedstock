@@ -1,4 +1,4 @@
-{% set version = "0.25.3" %}
+{% set version = "0.26.0" %}
 
 package:
   name: incognita
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/the-scouts/incognita/releases/download/v{{ version }}/incognita-{{ version }}.tar.gz
-  sha256: 7836b0c7f3d7fa14426c68c866a841dedc9a6a49ed8320bccf4c13ec81b9893d
+  sha256: 8eb62491c24405ff70887268381b3b7cd4d5b9be69b98b42d52ea406c082de41
 
 build:
   number: 0
