@@ -9,16 +9,16 @@ source:
   sha256: fdff6d46108ff630449336e4d3134f883a687cdc426383bca202284c1eb04ed2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pandas
     - numpy
     - folium
@@ -29,6 +29,8 @@ requirements:
     - pygeos
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - incognita
 
